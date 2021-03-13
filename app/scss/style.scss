@@ -69,14 +69,20 @@
 .sidebar__logos {
     display: flex;
     justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 35px;
+    padding-left: 45px;
     img + img {
         margin-left: 35px;
     }
     img {
-        width: 25px;
-        height: 25px;
+        width: 45px;
+        height: 45px;
+    }
+    a{
+        opacity: 70%;
+        transition: .3s ease;
+    }
+    a:hover{
+        opacity: 100%;
     }
 }
 
@@ -197,4 +203,27 @@
     margin-right: 15px;
 }
 
+.content__inner-quote{
+    font-size: 36px;
+    opacity: 25%;
+    margin-left: 65px;
+    margin-top: 90px;
+    font-family: 'Proxima Nova Th';
+    line-height: 66px;
+    letter-spacing: 1px;
+    padding-left: 55px;
+    position: relative;
+    &::before{
+        content:"";
+        background-image: url(../images/q2.png);
+        background-position: center;
+        background-size: cover;
+        width: 85px;
+        position: absolute;
+        left: -7px;
+        top: 0px;
+        z-index:-1;
+        height: 72px;
+    }
+}
 /* END ABOUT PAGE */
